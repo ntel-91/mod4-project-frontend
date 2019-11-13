@@ -6,10 +6,6 @@ import Category from '../components/Category.js'
 
 class ItemContainer extends Component  {
 
-    state = {
-
-    }
-
     renderCategories = (categories) => {
         return categories.map((category) => {        
             return (       
@@ -24,6 +20,7 @@ class ItemContainer extends Component  {
         
         return (
             <div>
+                <h1>Shop by:</h1>
                 {this.renderCategories(this.props.categories)}
             </div>
         )

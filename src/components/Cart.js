@@ -21,18 +21,33 @@ class Cart extends React.Component {
         }
     }
 
-    renderCart = () => {
-
+    renderPrevPurches = (items) => {
+        return items.map((item) => {
+            return (
+                <div>
+                    {item.name}
+                </div> 
+            )
+        })    
     }
 
     render() {
         return (
             <div>
-                <p><Link to='/products'>Continue Shopping</Link></p>
-                <h1>Your Cart!</h1>
-                {this.renderItems(this.props.cartItems)}
-                <h5> { this.props.cartItems.length !== 0 ? `Total: $${this.renderTotal(this.props.cartItems)}` : null} </h5>
-                <button onClick={this.props.submitOrder}>Submit Order</button>
+                <div>
+                    <p><Link to='/products'>Continue Shopping</Link></p>
+                    <h3>{ this.props.cartItems.length !== 0 ? "Your Cart!" : "Your Cart is Empty :-("}</h3>
+                    {this.renderItems(this.props.cartItems)}
+                    <h5> { this.props.cartItems.length !== 0 ? `Cart Total: $${this.renderTotal(this.props.cartItems)}` : null} </h5>
+                    <button onClick={this.props.submitOrder}>Submit Order</button>
+                </div>
+
+                <div>
+                    <h3>Previous Purchased:</h3>
+                    <div className="prev-purch-header">
+                        {this.renderPrevPurches(this.props.prevPurchases)}
+                    </div>
+                </div>
             </div>
 
         )

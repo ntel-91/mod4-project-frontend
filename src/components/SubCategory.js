@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Item from './Item.js'
+import '../css/subcategory.css'
 
 class SubCategory extends React.Component {
     
@@ -28,7 +29,7 @@ class SubCategory extends React.Component {
         
         return (
             <div>
-                <h3 onClick={this.handleClick}>{this.props.subCategory.name} </h3>
+                <h3 className="subcategory-header" onClick={this.handleClick}>{this.props.subCategory.name} </h3>
                 {this.renderItems(this.props.subCategory.items)}
             </div>
         )

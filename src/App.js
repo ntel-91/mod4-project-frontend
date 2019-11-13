@@ -7,7 +7,7 @@ import CreateAccount from './components/CreateAccount.js'
 import LoginForm from './components/LoginForm.js'
 import HamsterHeader from './components/HamsterHeader.js'
 import Cart from './components/Cart.js'
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 class App extends Component {
   
@@ -17,7 +17,8 @@ class App extends Component {
     id: "",
     name: "",
     username: "",
-    prevPurchases: []
+    prevPurchases: [],
+    redirect: false
   }
 
   componentDidMount(){
@@ -103,7 +104,8 @@ class App extends Component {
         name: "",
         username: "",
         cart: [],
-        prevPurchases: []
+        prevPurchases: [],
+        redirect: !this.state.redirect
     })
   }
 
@@ -114,13 +116,15 @@ class App extends Component {
       <div className="App">
           <HeaderContainer />
           { this.state.username ? <HamsterHeader hamster={this.state.name} cart={this.state.cart} logout={this.logout}/> : <Welcome /> }
-          
+          { this.state.redirect ? <Redirect to='/'/> : null }
+
+
           <Switch>
             <Route path='/login' render={(routerProps) => <LoginForm handleLogin={this.handleLogin}/>}/>
             <Route path='/create' render={(routerProps) => <CreateAccount createAccount={this.createAccount}/>}/>
             {/* <Route path='/welcome' component={Welcome}/> */}
             <Route path='/products' render={(routerProps) => <ItemContainer categories={this.state.categories} cart={this.state.cart} addToCart={this.addToCart}/>}/>
-            <Route path='/cart' render={(routerProps) => <Cart cartItems={this.state.cart} submitOrder={this.submitOrder} removeFromCart={this.removeFromCart}/>} />
+            <Route path='/cart' render={(routerProps) => <Cart cartItems={this.state.cart} prevPurchases={this.state.prevPurchases} submitOrder={this.submitOrder} removeFromCart={this.removeFromCart}/>} />
           </Switch>
 
       </div>

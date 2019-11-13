@@ -28,7 +28,7 @@ class Category extends React.Component {
         
         return (
             <div className="category">
-                <h2 className="category-header" onClick={this.handleClick}>{this.props.category.category_name} </h2>
+                <h2 className="category-header" onClick={this.handleClick}>{this.props.category.category_name}</h2>
                 {this.renderSubCategories(this.props.category.sub_categories)}
             </div>
         )
