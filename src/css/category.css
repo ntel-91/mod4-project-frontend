@@ -1,0 +1,9 @@
+.category-header:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+/* .category {
+    color: purple;
+    cursor: pointer;
+} */

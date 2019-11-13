@@ -1,0 +1,234 @@
+{ 
+    "inventory": [
+        { 
+            "id": 1,
+            "category_name": "Winter Gear",
+            "sub_category": [
+                {
+                    "id": 1,
+                    "name": "Mini Homes",
+                    "img_url": "https://images-na.ssl-images-amazon.com/images/I/51vgpBCfdvL._SL1000_.jpg",
+                    "items": [
+                        {
+                            "name": "Green Crocodile Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/718PwlKHqsL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Pink Pig Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/610U1SegnFL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Green Crocodile Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/718PwlKHqsL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Pink Pig Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/610U1SegnFL._SL1100_.jpg",
+                            "price": 14.99
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "House Hammocks",
+                    "img_url": "https://www.pet-bliss.ie/wp-content/uploads/2018/10/HamsterHammockTrixieLargeImage.jpg",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Winter Hats",
+                    "img_url": "https://i.pinimg.com/originals/9f/a8/bc/9fa8bc3507494f6c64e68d4f2a95af43.jpg",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Heating Pads",
+                    "img_url": "https://images-na.ssl-images-amazon.com/images/I/717HTyceK3L._SL1500_.jpg",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        { 
+            "id": 2,
+            "category_name": "Fashion",
+            "sub_category": [
+                {
+                    "id": 1,
+                    "name": "Costumes",
+                    "img_url": "https://s7d2.scene7.com/is/image/PetSmart/5289020?$pdp-placeholder-desktop$",
+                    "items": [
+                        {
+                            "name": "Green Crocodile Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/718PwlKHqsL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Pink Pig Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/610U1SegnFL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Green Crocodile Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/718PwlKHqsL._SL1100_.jpg",
+                            "price": 14.99
+                        },
+                        {
+                            "name": "Pink Pig Mini Home",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/610U1SegnFL._SL1100_.jpg",
+                            "price": 14.99
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Hats",
+                    "img_url": "http://www.illuminatedesignstudio.com/blog/wp-content/uploads/2013/04/hamster1.png",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Dresses",
+                    "img_url": "http://guineapigagility.com/menagerie/photos/gp/Damsel2_2011-04-27.jpg",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Shirts",
+                    "img_url": "https://images-na.ssl-images-amazon.com/images/I/611HnZx9RhL._SL1400_.jpg",
+                    "items": [
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        },
+                        {
+                            "name": "Banana Hammock Hamster House",
+                            "img_url": "https://images-na.ssl-images-amazon.com/images/I/61cLA0mY0-L._SL1000_.jpg",
+                            "price": 7.79
+                        }
+                    ]
+                }
+            ]
+            
+        }
+    ]
+}

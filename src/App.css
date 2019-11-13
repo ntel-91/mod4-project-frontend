@@ -20,3 +20,53 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 50px
+
+}
+
+.header #logo {
+  float: left;
+}
+
+#login {
+  display: flex;
+  justify-content: flex-end;
+  
+  
+  /* margin-top: 2px;
+  float: right;
+  position: absolute;
+  z-index: 2; */
+}
+
+.welcome {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+
