@@ -72,6 +72,7 @@ class App extends Component {
     })
   }
 
+  
   submitOrder = () => {
     const prevCart = this.state.cart
 
@@ -110,8 +111,7 @@ class App extends Component {
   }
 
   render(){
-    console.log("PAST: ", this.state.prevPurchases)
-    console.log("CART", this.state.cart)
+    
     return (
       <div className="App">
           <HeaderContainer />
@@ -124,7 +124,7 @@ class App extends Component {
             <Route path='/create' render={(routerProps) => <CreateAccount createAccount={this.createAccount}/>}/>
             {/* <Route path='/welcome' component={Welcome}/> */}
             <Route path='/products' render={(routerProps) => <ItemContainer categories={this.state.categories} cart={this.state.cart} addToCart={this.addToCart}/>}/>
-            <Route path='/cart' render={(routerProps) => <Cart cartItems={this.state.cart} prevPurchases={this.state.prevPurchases} submitOrder={this.submitOrder} removeFromCart={this.removeFromCart}/>} />
+            <Route path='/cart' render={(routerProps) => <Cart remove={this.removeFromCart} cartItems={this.state.cart} prevPurchases={this.state.prevPurchases} submitOrder={this.submitOrder} removeFromCart={this.removeFromCart}/>} />
           </Switch>
 
       </div>

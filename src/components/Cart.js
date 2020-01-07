@@ -2,22 +2,27 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class Cart extends React.Component {
-
+   
     renderItems = (items) => {
         return items.map((item) => {
-            return (
-                <p>{item.name}{": "}{item.price} </p>
+            return (   
+                <p>{item.name}{": $"}{item.price} </p>
             )
         })
     }
 
     renderTotal = (items) => {
+
+        const priceArray = items.map((item) => {
+            return item.price
+        })
+
         if (items.length === 1) {
-            return `$${items[0].price}`
+            return `${items[0].price}`
         } else if (items.length !== 0) {
-            return items.reduce((acc, cv) => {
-                return acc.price + cv.price
-            })
+            return priceArray.reduce((acc, cv) => {
+                return acc + cv
+            }, 0)
         }
     }
 
@@ -26,7 +31,7 @@ class Cart extends React.Component {
             return (
                 <div>
                     {item.name}
-                </div> 
+                </div>
             )
         })    
     }

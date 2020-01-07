@@ -25,7 +25,7 @@ class LoginForm extends React.Component {
         }
         this.setState({
             redirect: true
-        }, console.log(this.state.redirect))
+        })
     }
 
     loginTrue = (username) => {
