@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Category from '../components/Category.js'
+import '../css/category.css';
 
 
 // import { Card } from 'semantic-ui-react'
@@ -20,7 +21,7 @@ class ItemContainer extends Component  {
     render() {
         
         return (
-            <div>
+            <div className="category-box">
                 <h1>Shop by:</h1>
 
                 {this.renderCategories(this.props.categories)}

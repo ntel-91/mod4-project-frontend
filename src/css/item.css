@@ -1,14 +1,9 @@
-.subcategory-header:hover {
-    color: grey;
-    cursor: pointer;
-}
-
-.subcategory-container {
+.item-container {
     display: grid;
 }
 
-.subcategory {
-    background-color: rebeccapurple;
+.item {
+    background-color: plum;
     margin: 5px;
     padding: 5px;
     border-width: 1px;

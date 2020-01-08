@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../css/item.css'
 
 class Item extends React.Component {
     
@@ -24,7 +25,7 @@ class Item extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="item">
                 <h5>{`${this.props.item.name}, Price: $${this.props.item.price}`} <button disabled={this.state.disabled} onClick={() => this.add(this.props.item)}>add to cart</button></h5>
             </div>
         )

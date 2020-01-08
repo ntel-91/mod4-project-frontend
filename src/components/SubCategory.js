@@ -25,12 +25,13 @@ class SubCategory extends React.Component {
         })
     }
     
-    render() {
-        
+    render() {  
         return (
-            <div>
+            <div className="subcategory">
                 <h3 className="subcategory-header" onClick={this.handleClick}>{this.props.subCategory.name} </h3>
-                {this.renderItems(this.props.subCategory.items)}
+                <div className="item-container">
+                    {this.renderItems(this.props.subCategory.items)}
+                </div>
             </div>
         )
     }

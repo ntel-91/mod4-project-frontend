@@ -3,7 +3,23 @@
     cursor: pointer;
 }
 
-/* .category {
-    color: purple;
-    cursor: pointer;
-} */
+
+
+.category-box {
+    background-color: red;
+    display: grid;
+    padding: 10px;
+    text-align: left;
+}
+
+.category {
+    background-color: purple;
+    padding: 10px;
+    border-width: 1px;
+    margin: 2px;
+    border-style: solid;
+    text-align: left;
+    display: grid;
+    /* grid-template-rows: 15% auto; */
+    /* grid-template-columns: auto auto auto auto */
+}

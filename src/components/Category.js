@@ -19,19 +19,19 @@ class Category extends React.Component {
         return subCategories.map((subcategory) => {    
             return (
                 <div key={subcategory.id}>
-                    {console.log(subcategory.id)}
                     {this.state.toggled === true ? <SubCategory subCategory={subcategory} cart={this.props.cart} addToCart={this.props.addToCart}/> : null}
                 </div>
             )
         })
     }
     
-    render() {
-        
+    render() {    
         return (
             <div className="category">
                 <h2 className="category-header" onClick={this.handleClick} >{this.props.category.category_name}</h2>
-                {this.renderSubCategories(this.props.category.sub_categories)}
+                <div className="subcategory-container">
+                    {this.renderSubCategories(this.props.category.sub_categories)}
+                </div>
             </div>
         )
     }
