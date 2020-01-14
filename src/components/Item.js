@@ -23,10 +23,20 @@ class Item extends React.Component {
     }
     
     render() {
-
+        console.log(this.props.item)
         return (
             <div className="item">
-                <h5>{`${this.props.item.name}, Price: $${this.props.item.price}`} <button disabled={this.state.disabled} onClick={() => this.add(this.props.item)}>add to cart</button></h5>
+                <div className='item-contents'>
+                    <div className='content'>
+                        <h5>{`${this.props.item.name}`}</h5>
+                    </div>
+                    <div className='content'>
+                        <h5>Price: ${this.props.item.price}</h5>
+                    </div>
+                    <div className='content'>
+                        <button disabled={this.state.disabled} onClick={() => this.add(this.props.item)}>add to cart</button>
+                    </div>
+                </div>
             </div>
         )
     }

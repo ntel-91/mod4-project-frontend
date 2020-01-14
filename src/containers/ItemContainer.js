@@ -22,7 +22,7 @@ class ItemContainer extends Component  {
         
         return (
             <div className="category-box">
-                <h1>Shop by:</h1>
+                <h1>Categories:</h1>
 
                 {this.renderCategories(this.props.categories)}
             </div>

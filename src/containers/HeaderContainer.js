@@ -9,7 +9,7 @@ class HeaderContainer extends React.Component {
     render() {   
         return (
             <div className="header">
-                <h2 id="logo" >Test</h2>
+                <h2 id="logo" >Shopping Site</h2>
             </div>
         )
     }

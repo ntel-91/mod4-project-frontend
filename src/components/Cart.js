@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import '../css/cart.css'
 
 class Cart extends React.Component {
    
     renderItems = (items) => {
         return items.map((item) => {
             return (   
-                <p>{item.name}{": $"}{item.price} </p>
+                <div className='cart-item'>{item.name}{": $"}{item.price} </div>
             )
         })
     }
@@ -29,8 +30,8 @@ class Cart extends React.Component {
     renderPrevPurches = (items) => {
         return items.map((item) => {
             return (
-                <div>
-                    {item.name}
+                <div className='prev-purchased-item'>
+                    <div className='prev-pruch-text'>{item.name}</div>
                 </div>
             )
         })    
@@ -39,15 +40,21 @@ class Cart extends React.Component {
     render() {
         return (
             <div>
-                <div>
+                <div class='cart'>
                     <p><Link to='/products'>Continue Shopping</Link></p>
                     <h3>{ this.props.cartItems.length !== 0 ? "Your Cart!" : "Your Cart is Empty :-("}</h3>
-                    {this.renderItems(this.props.cartItems)}
-                    <h5> { this.props.cartItems.length !== 0 ? `Cart Total: $${this.renderTotal(this.props.cartItems)}` : null} </h5>
-                    <button onClick={this.props.submitOrder}>Submit Order</button>
+                        <div className='cart-items'>
+                            {this.renderItems(this.props.cartItems)}
+                        </div>
+                    <div className='cart-total'>
+                        <h5> 
+                            { this.props.cartItems.length !== 0 ? `Cart Total: $${this.renderTotal(this.props.cartItems)}` : 'Cart Total: $0'} 
+                        </h5>
+                        <button onClick={this.props.submitOrder}>Submit Order</button>
+                    </div>
                 </div>
 
-                <div>
+                <div className='prev-purchased'>
                     <h3>Previous Purchased:</h3>
                     <div className="prev-purch-header">
                         {this.renderPrevPurches(this.props.prevPurchases)}

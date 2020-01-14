@@ -3,23 +3,22 @@
     cursor: pointer;
 }
 
-
-
 .category-box {
-    background-color: red;
     display: grid;
     padding: 10px;
     text-align: left;
+    width: 900px;
 }
 
 .category {
-    background-color: purple;
     padding: 10px;
     border-width: 1px;
     margin: 2px;
     border-style: solid;
     text-align: left;
     display: grid;
-    /* grid-template-rows: 15% auto; */
-    /* grid-template-columns: auto auto auto auto */
+    width: 876px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }

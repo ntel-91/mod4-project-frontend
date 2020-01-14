@@ -1,14 +1,27 @@
 .item-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .item {
-    background-color: plum;
     margin: 5px;
     padding: 5px;
     border-width: 1px;
     border-style: solid;
     text-align: left;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content {
+    margin-top: 10px;
 }

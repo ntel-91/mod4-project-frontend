@@ -9,7 +9,7 @@ class HamsterHeader extends React.Component {
 
     render() {
         return (
-            <div id="login" >
+            <div id="login" class='user-options'>
                 Welcome, {this.props.hamster} 
                 {" | "}
                 <Link to='/cart'>View Cart {this.renderCartNumber()}</Link>
