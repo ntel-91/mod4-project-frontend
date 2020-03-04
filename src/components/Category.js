@@ -16,13 +16,16 @@ class Category extends React.Component {
     }
 
     renderSubCategories = (subCategories) => {
-        return subCategories.map((subcategory) => {    
-            return (
-                <div key={subcategory.id}>
-                    {this.state.toggled === true ? <SubCategory subCategory={subcategory} cart={this.props.cart} addToCart={this.props.addToCart}/> : null}
-                </div>
-            )
-        })
+        return (
+            
+            subCategories.map((subcategory) => {    
+                return (
+                    <div key={subcategory.id}>
+                        {this.state.toggled === true ? <SubCategory subCategory={subcategory} cart={this.props.cart} addToCart={this.props.addToCart}/> : null}
+                    </div>
+                )
+            })
+        )
     }
     
     render() {    
