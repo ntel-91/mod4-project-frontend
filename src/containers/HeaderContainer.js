@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import LoginForm from '../components/LoginForm.js'
-import HamsterHeader from '../components/HamsterHeader.js'
+import Header from '../components/Header.js'
 import { Link } from 'react-router-dom'
 
 

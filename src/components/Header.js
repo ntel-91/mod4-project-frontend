@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-class HamsterHeader extends React.Component {
+class Header extends React.Component {
 
     renderCartNumber = () => {
         return `(${this.props.cart.length})`
@@ -20,4 +20,4 @@ class HamsterHeader extends React.Component {
     }
 }
 
-export default HamsterHeader
+export default Header

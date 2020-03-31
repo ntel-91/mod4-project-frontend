@@ -5,7 +5,7 @@ import HeaderContainer from './containers/HeaderContainer.js'
 import Welcome from './components/Welcome.js'
 import CreateAccount from './components/CreateAccount.js'
 import LoginForm from './components/LoginForm.js'
-import HamsterHeader from './components/HamsterHeader.js'
+import Header from './components/Header.js'
 import Cart from './components/Cart.js'
 import { Route, Switch, Redirect } from 'react-router-dom';
 
@@ -115,7 +115,7 @@ class App extends Component {
     return (
       <div className="App">
           <HeaderContainer />
-          { this.state.username ? <HamsterHeader hamster={this.state.name} cart={this.state.cart} logout={this.logout}/> : <Welcome /> }
+          { this.state.username ? <Header hamster={this.state.name} cart={this.state.cart} logout={this.logout}/> : <Welcome /> }
           { this.state.redirect ? <Redirect to='/'/> : null }
 
 
